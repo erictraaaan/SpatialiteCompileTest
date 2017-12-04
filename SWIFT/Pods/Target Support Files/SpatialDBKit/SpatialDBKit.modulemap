@@ -1,0 +1,6 @@
+framework module SpatialDBKit {
+  umbrella header "SpatialDBKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

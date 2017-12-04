@@ -1,0 +1,50 @@
+PODS:
+  - FMDB/common (2.5)
+  - geos (3.5.0)
+  - proj4 (4.8.0)
+  - ShapeKit (0.9.6):
+    - geos
+    - proj4
+  - SpatialDBKit (0.1.1):
+    - FMDB/common
+    - ShapeKit
+    - spatialite
+    - sqlite3/rtree
+  - spatialite (4.1.1):
+    - spatialite/standard (= 4.1.1)
+  - spatialite/core (4.1.1):
+    - sqlite3
+  - spatialite/geos (4.1.1):
+    - geos
+    - spatialite/core
+  - spatialite/proj4 (4.1.1):
+    - proj4
+    - spatialite/core
+  - spatialite/standard (4.1.1):
+    - spatialite/geos
+    - spatialite/proj4
+  - sqlite3 (3.21.0):
+    - sqlite3/common (= 3.21.0)
+  - sqlite3/common (3.21.0)
+  - sqlite3/rtree (3.21.0):
+    - sqlite3/common
+
+DEPENDENCIES:
+  - SpatialDBKit (from `./`)
+
+EXTERNAL SOURCES:
+  SpatialDBKit:
+    :path: ./
+
+SPEC CHECKSUMS:
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  geos: e96c6ca3f3ce02d20feaa8d90d4af383e11e7198
+  proj4: 234525105d05a33b2ae9a90a6fe3935f7a246f7e
+  ShapeKit: 81669c6073b6bacc013a43312039ba013b2c47e5
+  SpatialDBKit: 02f0cc9899c2e427bc5482c5f29448740e4b2bc8
+  spatialite: 3f7ab5010c97a53c3dbc1be4615cc95c6dbc7ed6
+  sqlite3: c1728c2cd4ce1c2e629d674e4a732cf0339eb906
+
+PODFILE CHECKSUM: 186718fc80fa9df9abbc460824f928c611428c4a
+
+COCOAPODS: 1.3.1

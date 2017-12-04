@@ -1,0 +1,12 @@
+CLANG_CXX_LIBRARY = libstdc++
+CLANG_ENABLE_MODULES = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/ShapeKit" "$PODS_CONFIGURATION_BUILD_DIR/SpatialDBKit" "$PODS_CONFIGURATION_BUILD_DIR/geos" "$PODS_CONFIGURATION_BUILD_DIR/proj4" "$PODS_CONFIGURATION_BUILD_DIR/spatialite" "$PODS_CONFIGURATION_BUILD_DIR/sqlite3"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi ${PODS_ROOT}/spatialite/src ${PODS_ROOT}/spatialite/src/headers ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/FMDB/FMDB.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ShapeKit/ShapeKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SpatialDBKit/SpatialDBKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/geos/geos.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/proj4/proj4.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/spatialite/spatialite.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/sqlite3/sqlite3.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"stdc++" -framework "FMDB" -framework "ShapeKit" -framework "SpatialDBKit" -framework "geos" -framework "proj4" -framework "spatialite" -framework "sqlite3"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

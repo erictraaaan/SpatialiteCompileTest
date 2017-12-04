@@ -1,0 +1,1 @@
+../spatialite/config.h

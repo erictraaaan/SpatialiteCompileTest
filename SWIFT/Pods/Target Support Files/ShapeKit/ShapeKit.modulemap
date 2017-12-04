@@ -1,0 +1,6 @@
+framework module ShapeKit {
+  umbrella header "ShapeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

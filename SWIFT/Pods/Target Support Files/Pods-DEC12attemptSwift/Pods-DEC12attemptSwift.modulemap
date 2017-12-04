@@ -1,0 +1,6 @@
+framework module Pods_DEC12attemptSwift {
+  umbrella header "Pods-DEC12attemptSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
