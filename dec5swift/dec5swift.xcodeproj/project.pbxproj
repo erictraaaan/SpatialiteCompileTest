@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C3665F01FD79EE60057CEF8 /* dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3665EF1FD79EE60057CEF8 /* dummy.m */; };
 		7C3665F21FD79EF00057CEF8 /* dummy2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7C3665F11FD79EF00057CEF8 /* dummy2.mm */; };
+		7C3665F41FD7A6770057CEF8 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3665F31FD7A6770057CEF8 /* Assets */; };
 		7CDFBA701FD79D3B00A6EB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFBA6F1FD79D3B00A6EB12 /* AppDelegate.swift */; };
 		7CDFBA721FD79D3B00A6EB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFBA711FD79D3B00A6EB12 /* ViewController.swift */; };
 		7CDFBA751FD79D3B00A6EB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CDFBA731FD79D3B00A6EB12 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		7C3665EE1FD79EE50057CEF8 /* dec5swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dec5swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C3665EF1FD79EE60057CEF8 /* dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dummy.m; sourceTree = "<group>"; };
 		7C3665F11FD79EF00057CEF8 /* dummy2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = dummy2.mm; sourceTree = "<group>"; };
+		7C3665F31FD7A6770057CEF8 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "../OBJ-C/Assets"; sourceTree = "<group>"; };
 		7CDFBA6C1FD79D3B00A6EB12 /* dec5swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dec5swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDFBA6F1FD79D3B00A6EB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CDFBA711FD79D3B00A6EB12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		7CDFBA631FD79D3B00A6EB12 = {
 			isa = PBXGroup;
 			children = (
+				7C3665F31FD7A6770057CEF8 /* Assets */,
 				7CDFBA6E1FD79D3B00A6EB12 /* dec5swift */,
 				7CDFBA6D1FD79D3B00A6EB12 /* Products */,
 				F2327A8DCE0543B46930E61C /* Pods */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDFBA7A1FD79D3B00A6EB12 /* LaunchScreen.storyboard in Resources */,
+				7C3665F41FD7A6770057CEF8 /* Assets in Resources */,
 				7CDFBA771FD79D3B00A6EB12 /* Assets.xcassets in Resources */,
 				7CDFBA751FD79D3B00A6EB12 /* Main.storyboard in Resources */,
 			);

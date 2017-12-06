@@ -9,9 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let myVar = SpatialDatabase.sqliteLibVersion()
+    let test = SpatialDatabase.spatialiteLibVersion()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print ("Hello! current sqlite version: \(myVar)")
+        print ("Hello! current spatialite version: \(test)")
+        
+        let db = SpatialDatabase(path: Bundle.main.path(forResource: "Assets/db3", ofType: "sqlite"))
+        db?.open()
+        
+//        let myDB = SpatialDatabase(path: "Assets/db3.sqlite")
+//        let myString = myDB?.databasePath()
+//        myDB?.open()
+//        myDB?.close()
+//        let result: FMResultSet = myDB?.executeQuery(<#T##sql: String!##String!#>, withVAList: <#T##CVaListPointer#>)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
