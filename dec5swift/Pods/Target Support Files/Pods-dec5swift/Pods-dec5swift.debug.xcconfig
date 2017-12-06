@@ -1,0 +1,11 @@
+CLANG_CXX_LIBRARY = libstdc++
+CLANG_ENABLE_MODULES = NO
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi ${PODS_ROOT}/spatialite/src ${PODS_ROOT}/spatialite/src/headers ${PODS_ROOT}/geos/include ${PODS_ROOT}/geos/capi $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FMDB" "${PODS_ROOT}/Headers/Public/ShapeKit" "${PODS_ROOT}/Headers/Public/SpatialDBKit" "${PODS_ROOT}/Headers/Public/geos" "${PODS_ROOT}/Headers/Public/proj4" "${PODS_ROOT}/Headers/Public/spatialite" "${PODS_ROOT}/Headers/Public/sqlite3"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FMDB" "$PODS_CONFIGURATION_BUILD_DIR/ShapeKit" "$PODS_CONFIGURATION_BUILD_DIR/SpatialDBKit" "$PODS_CONFIGURATION_BUILD_DIR/geos" "$PODS_CONFIGURATION_BUILD_DIR/proj4" "$PODS_CONFIGURATION_BUILD_DIR/spatialite" "$PODS_CONFIGURATION_BUILD_DIR/sqlite3"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FMDB" -isystem "${PODS_ROOT}/Headers/Public/ShapeKit" -isystem "${PODS_ROOT}/Headers/Public/SpatialDBKit" -isystem "${PODS_ROOT}/Headers/Public/geos" -isystem "${PODS_ROOT}/Headers/Public/proj4" -isystem "${PODS_ROOT}/Headers/Public/spatialite" -isystem "${PODS_ROOT}/Headers/Public/sqlite3"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FMDB" -l"ShapeKit" -l"SpatialDBKit" -l"geos" -l"iconv" -l"proj4" -l"spatialite" -l"sqlite3" -l"stdc++" -l"z" -framework "CoreLocation"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
